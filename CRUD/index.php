@@ -50,15 +50,15 @@
                 if(response.status == 1 &&  response.data !== undefined){
                     let data = response.data,
                         html = `<tr>
-     <td  scope="row">0</td>
-     <td  scope="row"> ${data.title}</td>
+                        <td  scope="row"> ${data.Title}</td>
+         <td  scope="row"> ${data.Title}</td>
      <td  scope="row">${data.body}</td>
      <td  scope="row"><img src="uploads/${data.file_name}" width="250" height="200"></td>
      <td>
        <span class='delete btn btn-danger' data-id='${data.id}'>Delete</span>
      </td>
     </tr>`;         
-                    $('#tbody-container').prepend(html);
+                    $('#tbody-container').prepend(html)
                     alert("Data inserted Sucessfully")
                     $('#fupForm')[0].reset();
                     $('.statusMsg').html('<p class="alert alert-success">'+response.message+'</p>');
