@@ -1,0 +1,15 @@
+for httacess
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+------------------------------------------------------------------------------------------------------------------------
+for base url:
+<li><a href="<?=base_url().'page1' ?>" class=""><i class="lnr lnr-code"></i> <span>Page1</span></a></li>
+
+<link rel="stylesheet" href="assets/vendor/chartist/css/chartist-custom.css">
+
+https://www.youtube.com/playlist?list=PLmeL_nDUYxVNklxjQ4rOe00qSJN0jr259
+
+------------------------------------------------------------------------------------------------------------------------
